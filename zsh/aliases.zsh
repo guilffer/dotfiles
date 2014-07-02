@@ -2,3 +2,7 @@ alias reload!='. ~/.zshrc'
 
 alias be='bundle exec'
 alias ber='bundle exec rspec'
+
+alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pg-status='pg_ctl -D /usr/local/var/postgres status'
