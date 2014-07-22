@@ -31,5 +31,5 @@
 'welcome':
   'showOnStartup': false
 'release-notes':
-  'viewedVersion': '0.89.0'
+  'viewedVersion': '0.71.0'
 'tree-view': {}

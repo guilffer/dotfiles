@@ -1,4 +1,14 @@
+execute pathogen#infect()
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set wildchar=<Tab> wildmenu wildmode=full
+
+autocmd vimenter * NERDTree
