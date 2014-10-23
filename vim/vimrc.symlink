@@ -11,4 +11,4 @@ set expandtab
 
 set wildchar=<Tab> wildmenu wildmode=full
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
