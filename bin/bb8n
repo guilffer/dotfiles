@@ -1,0 +1,13 @@
+#!/bin/bash
+
+eval $*
+result=$?
+
+if [ $result -eq 0 ]
+then
+  node ~/Code/bb8/notify.js green 20 >> ~/Code/bb8/log/notify.log &
+else
+  node ~/Code/bb8/notify.js red 20 >> ~/Code/bb8/log/notify.log &
+fi
+
+exit $result

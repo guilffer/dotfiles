@@ -1,0 +1,4 @@
+".source.haml, .source.ruby" :
+  "Raise Standard Error" :
+    "prefix": "raise"
+    "body": "raise StandardError, :hey"

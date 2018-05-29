@@ -1,0 +1,10 @@
+# ~/.tmuxinator/clojure-koans.yml
+
+name: clojure-koans
+root: ~/Code/clojure-koans
+
+windows:
+  - koans: lein koan run
+  - editor: emacs .
+  - repl: lein repl
+  - terminal: #empty

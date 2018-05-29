@@ -1,0 +1,1 @@
+{".source.rb":{"raise standard error":{"prefix":"raise","body":"raise StandardError, :hey"}}}

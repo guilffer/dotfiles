@@ -1,4 +1,4 @@
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
 
 " Wrap gitcommit file types at the appropriate length

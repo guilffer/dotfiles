@@ -1,0 +1,5 @@
+name: kwarq
+root: ~/Code/kwarq
+
+windows:
+  - terminal: atom .

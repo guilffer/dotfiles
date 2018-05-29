@@ -10,8 +10,9 @@ fi
 alias gpl='git pull'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gps='git push'
-alias gpu="git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }')"
+alias gpss="git track && git push"
 alias gd='git diff'
+alias gds='git diff --staged'
 alias gcm='git commit'
 alias gco='git checkout'
 alias gcb='git copy-branch-name'

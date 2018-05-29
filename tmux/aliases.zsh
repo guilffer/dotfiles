@@ -1,0 +1,6 @@
+alias tml="tmux list-sessions"
+alias tma="tmux -2 attach -t $1"
+alias tmk="tmux kill-session -t $1"
+alias tmka="tmux kill-session"
+alias ts="c; tmuxinator start $1"
+alias tn="c; tmuxinator new $1"

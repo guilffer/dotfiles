@@ -1,0 +1,8 @@
+name: financeiro
+root: ~/Code/financeiro
+
+windows:
+  - server: foreman start
+  - console: rails c
+  - terminal: #empty
+  - editor: emacs .

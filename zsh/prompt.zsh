@@ -9,6 +9,10 @@ else
   git="/usr/bin/git"
 fi
 
+current_time() {
+  echo "%{$fg_bold[magenta]%}[%T]%{$reset_color%}"
+}
+
 git_branch() {
   echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
@@ -71,7 +75,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(current_time) $(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }

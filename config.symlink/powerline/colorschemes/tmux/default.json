@@ -1,0 +1,24 @@
+{
+    "name": "Default color scheme for terminal prompts",
+    "groups": {
+        "background":           {"fg": "solarized:base2",   "bg": "gray9",              "attrs": []},
+        "background:divider":   {"fg": "solarized:base2",   "bg": "gray9",              "attrs": []},
+
+        "session":              {"fg": "solarized:base3",   "bg": "solarized:base2",    "attrs": ["bold"]},
+        "session:prefix":       {"fg": "solarized:base3",   "bg": "gray9",              "attrs": ["bold"]},
+
+        "active_window_status": {"fg": "solarized:base3",   "bg": "gray9",              "attrs": []},
+        "window":               {"fg": "solarized:base3",   "bg": "gray9",              "attrs": ["bold"]},
+        "window:divider":       {"fg": "solarized:base3",   "bg": "gray9",              "attrs": ["bold"]},
+        "window_status":        {"fg": "solarized:base3",   "bg": "gray9",              "attrs": []},
+
+        "window:current":       {"fg": "solarized:violet",  "bg": "solarized:base3",    "attrs": ["bold"]},
+        "window_name":          {"fg": "solarized:violet",  "bg": "solarized:base3",    "attrs": ["bold"]},
+
+
+        "activity_status":      {"fg": "yellow",            "bg": "gray9",              "attrs": []},
+        "bell_status":          {"fg": "red",               "bg": "gray9",              "attrs": []}
+
+
+    }
+}

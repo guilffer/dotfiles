@@ -1,0 +1,16 @@
+name: purecharity
+root: ~/Code/causemetric/purecharity
+
+windows:
+  # - server:
+  #     layout: 3f25,181x39,0,0[181x7,0,0{90x7,0,0,0,90x7,91,0,4},181x31,0,8,5]
+  #     panes:
+  #       - bundle exec post_office --pop 10110 --smtp 10025
+  #       - redis-server
+  #       - LOCALHOST="localhost:3000" sleep 1 && bundle exec unicorn -E development -c ./config/unicorn.rb -l 3000
+  #       - LOCALHOST="localhost:3000" sleep 1 && bundle exec sidekiq -q high,3 -q default,2 -q low
+  #       # - LOCALHOST="localhost:3000" foreman start
+  - server: LOCALHOST="localhost:3000" foreman start
+  - console: sc #be pry -r ./config/environment
+  - terminal: # empty
+  # - editor: emacs .

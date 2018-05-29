@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "date"
+
+year = ARGV[0] || Date.today.year
+puts "Loading LEAO#{year}"
+system "cd ~/Applications/LEAO#{year} && ./exec.sh &> log.txt &"

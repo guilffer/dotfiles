@@ -1,0 +1,1 @@
+{"context-menu":{"atom-text-editor":[{"label":"Toggle symbols-generator","command":"symbols-generator:toggle"}]},"menu":[{"label":"Packages","submenu":[{"label":"symbols-generator","submenu":[{"label":"Toggle","command":"symbols-generator:toggle"}]}]}]}

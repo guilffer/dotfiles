@@ -9,6 +9,9 @@ export ZSH=$HOME/.dotfiles
 # Set OS X defaults
 $ZSH/osx/set-defaults.sh
 
+# Upgrade Mac App Store
+mas upgrade
+
 # Upgrade homebrew
 brew update
 

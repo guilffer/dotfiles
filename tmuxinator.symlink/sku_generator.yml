@@ -1,0 +1,7 @@
+name: sku_generator
+root: ~/Code/sku_generator
+
+windows:
+  - server: spring rails server
+  - console: spring rails console
+  - terminal: clear

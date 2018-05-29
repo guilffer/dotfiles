@@ -1,0 +1,32 @@
+set-option -g default-command "/bin/zsh"
+
+set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
+
+unbind r
+bind r source-file ~/.tmux.conf
+
+unbind ^A
+bind ^A select-pane -t :.+
+
+# Window navigation
+bind-key -n C-w next-window
+bind-key -n C-S-w previous-window
+bind-key -n C-S-Right next-window
+bind-key -n C-S-Left previous-window
+bind-key -n C-Space next-window
+
+# Mouse mode
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+
+
+# Force UT8 on no matter the locale (for iTerm2 vs. remot SSH weiedness on Mac)
+# set -g utf8 on
+set -g default-terminal "screen-256color"
+
+# Status bar settings adapted from powerline
+run-shell "powerline-daemon -q"
+if-shell 'env "$POWERLINE_CONFIG_COMMAND" tmux setup' '' 'run-shell "powerline-config tmux setup"'

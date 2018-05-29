@@ -1,0 +1,4 @@
+#compdef tmk
+
+_values 'lists' $(ls $HOME/.tmuxinator | awk -F "." '{print $1}')
+
